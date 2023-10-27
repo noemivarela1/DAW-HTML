@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="process.php" method="get">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <br>
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd">
+        <input type="submit" value="Submit">
+    </form>
+    <form action="submit.php" method="POST">
+        <fieldset>
+            <legend>Favourite colour</legend>
+            <input type="radio" name="colour" id="red" value="red">
+            <label for="red">Red</label>
+            <input type="radio" name="colour" id="blue" value="blue">
+            <label for="red">Blue</label>
+            <input type="radio" name="colour" id="green" value="green">
+            <label for="red">Green</label>
+        </fieldset>
+        <fieldset>
+            <legend>Communication ways</legend>
+            <input type="checkbox" name="email" id="email">
+            <label for="email">E-mail</label>
+            <input type="checkbox" name="mail" id="mail">
+            <label for="mail">Mail</label>
+            <input type="checkbox" name="phone" id="phone">
+            <label for="phone">Phone</label>
+        </fieldset>
+        <hr>
+        <h2>Nationality</h2>
+        <label for="nationality">Select nationality:</label>
+        <select name="nationality" id="nationality">
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <option value="british">British</option>
+            <option value="russian">Russian</option>
+        </select>
+        <br>
+        <label for="comment">Put your comment:</label>
+        <textarea name="comment" id="comment" cols="50" rows="5" >
+
+        </textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
